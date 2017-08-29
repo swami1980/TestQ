@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.testq.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context="com.example.android.justjava.MainActivity">
+
+    <EditText
+        android:id="@+id/playerName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:inputType="textPersonName" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/q1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:fontFamily="sans-serif"
+                android:padding="8dp"
+                android:text="Q1: When did Sachin debut"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <RadioGroup
+                android:id="@+id/q1rg1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/q1"
+                android:orientation="horizontal">
+<RadioButton
+    android:id="@+id/q1r1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:fontFamily="sans-serif"
+    android:layout_marginLeft="16dp"
+    android:paddingLeft="24dp"
+    android:text="18"
+    android:textColor="#757575"
+    android:textSize="16sp"
+    android:layout_below="@id/q1"/>
+
+            <RadioButton
+                android:id="@+id/q1r2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:layout_marginLeft="16dp"
+                android:paddingLeft="24dp"
+                android:text="21"
+                android:textColor="#757575"
+                android:textSize="16sp"
+                android:layout_below="@id/q1"
+                android:layout_toEndOf="@id/q1r1"/>
+
+</RadioGroup>
+
+            <TextView
+                android:id="@+id/q2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:padding="8dp"
+                android:text="Q2: What are the aspects of his game"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_below="@id/q1rg1"/>
+
+            <CheckBox android:id="@+id/q2c1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:layout_marginLeft="16dp"
+                android:paddingLeft="24dp"
+                android:text="Bowler"
+                android:textColor="#757575"
+                android:textSize="16sp"
+                android:layout_below="@id/q2"
+                />
+
+            <CheckBox android:id="@+id/q2c2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:layout_marginLeft="16dp"
+                android:paddingLeft="24dp"
+                android:text="Batsman"
+                android:textColor="#757575"
+                android:textSize="16sp"
+                android:layout_below="@id/q2"
+                android:layout_toRightOf="@id/q2c1"
+                android:gravity="right"/>
+
+            <CheckBox android:id="@+id/q2c3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:layout_marginLeft="16dp"
+                android:paddingLeft="24dp"
+                android:text="Wicket Keeper"
+                android:textColor="#757575"
+                android:textSize="16sp"
+                android:layout_below="@id/q2c1" />
+
+            <CheckBox android:id="@+id/q2c4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:layout_marginLeft="16dp"
+                android:paddingLeft="24dp"
+                android:text="All of the above"
+                android:textColor="#757575"
+                android:textSize="16sp"
+                android:layout_below="@id/q2c1"
+                android:layout_toRightOf="@id/q2c3"
+                android:gravity="right"
+                />
+
+            <TextView
+                android:id="@+id/q3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:padding="8dp"
+                android:text="Q3: Did he cross 10K runs "
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_below="@id/q2c3"/>
+            <RadioGroup
+                android:id="@+id/q3rg3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/q3"
+                android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/q3r1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:layout_marginLeft="16dp"
+                android:paddingLeft="24dp"
+                android:text="18"
+                android:textColor="#757575"
+                android:textSize="16sp"
+                android:layout_below="@id/q3"/>
+            <RadioButton
+                android:id="@+id/q3r2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:layout_marginLeft="16dp"
+                android:paddingLeft="24dp"
+                android:text="21"
+                android:textColor="#757575"
+                android:textSize="16sp"
+                android:layout_below="@id/q3"
+                android:layout_toEndOf="@id/q3r1"/>
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/q4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:padding="8dp"
+                android:text="Q4: Do you think he is the world's best"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_below="@id/q3rg3"/>
+
+            <EditText
+                android:id="@+id/q4e1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter ans here"
+                android:fontFamily="sans-serif"
+                android:padding="8dp"
+                android:textSize="16sp"
+                android:inputType="text"
+                android:textStyle="bold"
+                android:background="@null"
+                android:layout_marginLeft="16dp"
+                android:layout_below="@id/q4"/>
+
+            <Button
+
+                android:id="@+id/submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:fontFamily="sans-serif"
+                android:onClick="onSubmit"
+                android:text="Submit"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_below="@id/q4e1"/>
+
+            <TextView
+                android:id="@+id/result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:padding="8dp"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_below="@id/submit"/>
+
+            <Button
+                android:id="@+id/answer1"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/roundbutton"
+                android:layout_centerHorizontal="true"
+                android:text="1"
+                android:textColor="#fff"
+                android:layout_below="@id/submit"/>
+
+            <Button
+                android:id="@+id/answer2"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/roundbutton"
+                android:layout_centerHorizontal="true"
+                android:text="1"
+                android:textColor="#fff"
+                android:layout_below="@id/submit"
+                android:layout_toEndOf="@id/answer1"/>
+
+            <Button
+                android:id="@+id/answer3"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/roundbutton"
+                android:layout_centerHorizontal="true"
+                android:text="1"
+                android:textColor="#fff"
+                android:layout_below="@id/submit"
+                android:layout_toRightOf="@id/answer2"/>
+
+            <Button
+                android:id="@+id/answer4"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/roundbutton"
+                android:layout_centerHorizontal="true"
+                android:text="1"
+                android:textColor="#fff"
+                android:layout_below="@id/submit"
+                android:layout_toRightOf="@id/answer3"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</ScrollView>
